@@ -1,10 +1,17 @@
 <template>
-<h1>Détail de la tâche : titre</h1>
+  <div class="container my-4">
+    <title-header titleName="Détail de la tâche : titre"/>
+  </div>
 </template>
 
 <script>
+import titleHeader from "@/components/titleHeader";
+
 export default {
-  name: "DetailTache"
+  name: "DetailTache",
+  components: {
+    titleHeader
+  }
 }
 </script>
 

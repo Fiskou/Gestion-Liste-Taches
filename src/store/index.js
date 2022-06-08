@@ -6,7 +6,6 @@ import axios from "axios"
 export const useTacheStore = defineStore("tache", {
     state: () => ({
         taches: [],
-        isLoggedIn:false,
         tacheSelectionnee: null
     }),
     getters: {
@@ -23,11 +22,6 @@ export const useTacheStore = defineStore("tache", {
           catch (error) {
             alert(error)
             console.log(error)
-        }
-      },
-      checkLoggedInStatus(){
-        if ( localStorage.getItem('tache')){
-          this.isLoggedIn = true
         }
       }
     },

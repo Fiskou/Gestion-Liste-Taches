@@ -6,7 +6,7 @@ import DetailTache from "@/views/DetailTache";
 const routes = [
   {
     path: '/',
-    name: 'Dashboard',
+    name: 'DashBoard',
     component: Dashboard
   },
   {
